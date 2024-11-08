@@ -1,0 +1,4 @@
+/databases/csh/folder.integration_views/integration_views.vql
+/databases/csh/folder.base_views/base_views.vql
+/databases/csh/folder.base_views/views/client.vql
+/databases/csh/folder.base_views/views/client_type.vql

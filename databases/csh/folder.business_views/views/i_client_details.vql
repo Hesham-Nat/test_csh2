@@ -1,0 +1,10 @@
+CREATE OR REPLACE INTERFACE VIEW i_client_details (
+        client_id:text,
+        name:text,
+        surname:text,
+        client_type:text,
+        code:text,
+        value:text
+    )
+    SET IMPLEMENTATION dv_client_details
+    FOLDER = '/business_views';
