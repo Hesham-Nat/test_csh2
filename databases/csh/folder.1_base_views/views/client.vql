@@ -1,8 +1,8 @@
 ﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
 CREATE OR REPLACE WRAPPER JDBC client
-    FOLDER = '/1. base_views'
+    FOLDER = '/1_base_views'
     DATASOURCENAME=tutorial.acme_crm_ds
-    CATALOGNAME='${databases.csh.folder.1.. base_views.views.jdbc.client.CATALOGNAME}' 
+    CATALOGNAME='${databases.csh.folder.1_base_views.views.jdbc.client.CATALOGNAME}' 
     RELATIONNAME='client' 
     OUTPUTSCHEMA (
         client_id = 'client_id' :'java.lang.String' (OPT) (sourcetyperadix='10', sourcetypesize='50', description='', sourcetypeid='12', sourcetypename='VARCHAR')  NOT NULL SORTABLE,
@@ -19,7 +19,7 @@ CREATE OR REPLACE TABLE client I18N us_mst (
         surname:text (notnull, sourcetypeid = '12', sourcetyperadix = '10', sourcetypesize = '100', description = ''),
         client_type:text (notnull, sourcetypeid = '12', sourcetyperadix = '10', sourcetypesize = '2', description = '')
     )
-    FOLDER = '/1. base_views'
+    FOLDER = '/1_base_views'
     CONSTRAINT 'PRIMARY' PRIMARY KEY ( 'client_id' )
     CACHE OFF
     TIMETOLIVEINCACHE DEFAULT
