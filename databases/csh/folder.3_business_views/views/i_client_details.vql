@@ -7,4 +7,4 @@ CREATE OR REPLACE INTERFACE VIEW i_client_details (
         value:text
     )
     SET IMPLEMENTATION dv_client_details
-    FOLDER = '/business_views';
+    FOLDER = '/3_business_views';
